@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: Helvetica;
+}
+
+.tip_calculator {
+  width: 20vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.bill, .tip {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px 13px 0 13px;
+}
+
+.bill_box {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  background-color: #F7F7F7;
+}
+
+.calculate {
+  margin: 5px 13px 0 13px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px grey;
+  font-size: .6em;
+  color: black;
+}
+
+.tip_total, .total {
+  margin: 0 13px 0 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  margin-bottom: 20px;
+}
+
+.bill > span, .tip > span {
+  font-size: .5em;
+}
+
+.bill {
+  margin-top: 20px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+#billAmount,
+#tipPercent {
+  padding: 4px;
+  font-size: .3em;
+  background-color: rgb(247, 247, 247);
+  border: none;
+  text-align: center;
+}
+
+.bill_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: grey;
+}

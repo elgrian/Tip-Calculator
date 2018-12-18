@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="wrap">
+  <div class="tip_calculator">
+    <div class="bill">
+      <span>Bill</span>
+      <div class="bill_box">
+        <span>$&nbsp;</span><input id="billAmount" type="text" value="22.70"/>
+        <span>&nbsp;</span>
+      </div>
+    </div>
+    <div class="tip">
+      <span>Tip %</span>
+      <div class="bill_box">
+          <span>&nbsp;</span>
+        <input id="tipPercent" type="text" value="15"><span></span>
+        
+      </div>
+    </div>
+    <button class="calculate" onclick="calculateTip();">Calculate</button>
+    <div class="tip_total">
+      <span>Tip:</span>
+      <span class="bold" id="tipAmount">$0.00</span>
+    </div>
+    <div class="total">
+      <span>Total:</span>
+      <span class="bold" id="totalAmount">$0.00</span>
+    </div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+
+</html>
